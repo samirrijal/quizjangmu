@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>Quiz timro lagi 🥳</title>
+  <script src="./script.js"></script>
+</head>
+  <body>
+    <form method="POST" action="./submit.php">
+      <h1>La hai ta. K k thaha raicha herum</h1>
+    	<table>
+
+        <!--Name input-->
+        <tr>
+          <td>
+            <label class="input-label" for="name">Timro Name (which I prefer): </label>
+          </td>
+          <td>
+            <input class="name form-input" type="text" name="name" id="name" required>
+          </td>
+        </tr>
+
+        <!--Date Input-->
+        <tr>
+          <td>
+            <label class="input-label" for="surname">The date we first met: </label>
+          </td>
+          <td>
+            <input class="surname form-input" type="date" name="date" id="date" required>
+          </td>
+        </tr>
+
+        <!--Color input-->
+        <tr>
+          <td>
+            <label class="input-label" for="email">Mero fav color: </label>
+          </td>
+          <td>
+            <input class="email form-input" type="text" name="color" id="color" required>
+          </td>
+        </tr>
+
+        <!--Food input-->
+        <tr>
+          <td>
+              <label class="input-label" for="city">Fav khana: </label>
+            </td>
+            <td>
+              <input class="city form-input" type="text" name="food" id="food" placeholder="K khana man laacha hola malai?" required>
+            </td>
+        </tr>
+
+        <tr>
+          <td><p style="font-weight: 600; font-size: 1.25rem; text-transform: uppercase;">Last but not the least</p></td>
+        </tr>
+
+        <!--Secret input-->
+        <tr>
+          <td>
+              <label class="input-label" for="city">Secret pass bhana: </label>
+            </td>
+            <td>
+              <input class="city form-input" type="text" name="secret" id="secret" placeholder="Dhuk dhuk dhuk dhuk" required>
+            </td>
+        </tr>
+      </table>
+      <input type="submit" class="form-button submit-button" value="Send gara (milyacha sab?)" name="submit" />
+      <input type="reset" class="form-button clear-button" value="Sabai hataau" name="clear" />
+    </form>
+  </body>
+</html>
